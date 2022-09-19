@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EverM8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiki</title>
+</head>
+<body>
+    <header> <!-- Cabeçalho = introduz algo -->
+        <h1>Estudo do HTML</h1>
+        <p>Conceitos introdutórios da linguagem</p>
+        <nav> <!-- Agrupa links de navegação-->
+            <ol>
+                <li><a href="#intro">Introdição</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal da página -->
+         <section> <!-- Separa tópicos/conteúdos-->
+             <h3>Uso de tags</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officia inventore excepturi fugiat laborum enim totam debitis unde officiis. Quo.</p>
+         </section>
+         <section>
+            <h3>Uso de tabelas</h3>
+           <table border="1" cellpadding="3" style="border-collapse:collapse;">
+            <thead> <!-- Cabeçalho da tabela-->
+                <tr>
+                    <th colspan="4">Usuários</th><!--colspan= aumenta o alcance da coluna-->
+                </tr>
+                <tr><!--Table row(linha)-->
+                    <th>tipo</th>
+                    <th>Nome</th> <!--Table Header -->
+                    <th>CPF</th>
+                    <th>Data Nascimento</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Funcionários</td> <!--rowspan= expande o alcance linha td-->
+                        <td>Morais</td><!--Table Data-->
+                        <td>000.000.000-00</td>
+                        <td>07/07/77</td>
+                    </tr>
+                    <tr>
+                        <td>Junior</td><!--Table Data-->
+                        <td>000.000.000-00</td>
+                        <td>07/08/67</td>
+                    </tr>
+                    <tr>
+                        <td>Cliente</td>
+                        <td>Santos</td><!--Table Data-->
+                        <td>000.000.000-00</td>
+                        <td>07/10/88</td>
+                    </tr>
+                </tbody>
+            </thead>
+           </table>
+           <hr />
+           <table border="1" cellpadding="4" style="border-collapse:collapse;">
+               <tr>
+                <td>Celula 1-1</td>
+                <td colspan="2">0</td>
+               </tr>
+            
+               <tr>
+                <td>Celula 2-1</td>
+                <td>Celula 2-2</td>
+                <td>Celula 2-3</td>
+               </tr>                
+           </table>
+
+        </section>
+    </main>
+    <hr> <!-- Horizontal Rule-->
+    <footer> <!-- Dá informações sobre autoria/encerra o conteúdo -->
+        ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        Soulcode Academy
+    </footer>
+</body>
+</html>
