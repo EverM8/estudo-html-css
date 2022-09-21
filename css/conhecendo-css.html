@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EverM8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o CSS</title>
+    <style>
+        /* Código CSS */
+        /*
+        <seletor> {
+            propriedade: valor;
+            propriedade: valor;
+        }
+
+        Foramas de uso:
+        1) Inline=vai direto no elemento (<p style="color:red ; font-size: 32px;">Olá Mundo!</p>)
+        2)Tag <Style> vai direto no HTML
+        3)Dentro de arquivo separado
+        */
+
+       /* p{
+            color: blue;
+            font-size: 25px;
+            font-style: italic;
+        }*/
+    </style>
+    <!--stylesheet=FOLHA DE ESTILOS-->
+    <!--rel = relacionamneto--> 
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Inline=atributo style = estilização local -->
+    <p style="color:red ; font-size: 32px;">Olá Mundo!</p>
+    <p style="color:green ; font-weight: bold;">Peso da fonte</p>
+    <!-- O "p"recebe as propriedades do seletor -->
+    <p>Oi eu fui eslizado pela tag style</p>
+    <p style="color:orange;">Oi eu fui eslizado pela tag style</p>
+
+    <h1 id="meu-h1">Aprendendo CSS</h1>
+    <h1 class="cabecalho">Show</h1>
+    <h2 class="cabecalho">CSS is cool</h2>
+    <h3 class="cabecalho">Awesome</h3>
+    <div class="quadrado"></div>
+    <img class="banner" src="./img/galaxy.jpg" alt=""/>
+</body>
+</html>
