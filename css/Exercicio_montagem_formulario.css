@@ -1,0 +1,28 @@
+.img{
+    text-align:center ;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.tabela1{
+    background-color: rgb(195, 247, 247);
+    text-align: center;
+}
+
+.tabela2{
+    background-color: rgb(195, 247, 247);
+    text-align: center;
+}
+*{
+    background-color: aqua;
+}
+
+
+
+/*body{
+    background-image: url(https://soulcodeacademy.org/assets/images/logo/light-logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}*/

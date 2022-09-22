@@ -1,0 +1,27 @@
+
+.titulo{
+    background-color: green;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 60%;
+    font-size: x-large;
+}
+
+tr,th{
+    border-color: blue;
+}
+
+.libertadores{
+    color: green;
+}
+
+.sulAmericana{
+    color: orange;
+}
+
+.rebaixados{
+    color: red;
+}
