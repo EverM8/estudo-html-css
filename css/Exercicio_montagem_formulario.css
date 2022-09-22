@@ -3,6 +3,7 @@
 }
 
 .formulario{
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -15,8 +16,14 @@
     background-color: rgb(195, 247, 247);
     text-align: center;
 }
+
+thead,th,tr{
+    color: whitesmoke;
+}
+
 *{
-    background-color: aqua;
+    
+    background-color: rgb(67, 160, 221);
 }
 
 
