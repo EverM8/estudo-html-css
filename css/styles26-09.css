@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-1{
+    background-color: turquoise;
+    align-self: flex-end;
+    order: 1;
+}
+
+.box-2{
+    background-color: darkgoldenrod;
+    height: 300px;
+}
+
+.box-3{
+    background-color: darkorchid;
+    align-self: flex-start;
+}
+
+.box-4{
+    background-color: darkred;  
+}
+
+/*.container-flex div*/
+.container-flex{
+    background-color: silver;
+    display: flex; /*Ativa o flexbox*/
+    flex-direction: row; /* Distribuição vert(column) / horiz(row)*/
+    flex-wrap: wrap;/*Quebra "linha" quando não tem espaço*/
+    justify-content: center;/* Cuida dos elementos no eixo main* center, space-around, space-between, space-evenly*/
+    align-items: center;/*Cuida dos elementos no eixo cross(x)*strech,center,flex-start,flex-end*/
+   /*Cuida do "espaço extra" do container*/
+    align-content: center;
+    height: 350px;
+    gap: 8px;
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    
+}
+
+.box-5{
+    background-color: blueviolet;
+    flex: 1;
+} 
+
+.box-6{
+    background-color: teal;
+    flex: 2;
+}
+
+.box-7{
+    background-color: dimgrey;
+    flex: 200px;
+}
+
+.container-flex-2{
+    display: flex;
+    background-color: orange;
+    height: 200px;
+    flex-wrap: wrap;
+}
