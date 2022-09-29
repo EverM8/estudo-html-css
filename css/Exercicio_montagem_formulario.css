@@ -1,29 +1,51 @@
 .img{
+    padding-top: 20px;
     text-align:center ;
 }
 
+.button{
+    margin-top: 10px;
+}
+
+.check{
+    margin-top: 10px;
+}
+
 .formulario{
+    padding-top: 20px;
     color: whitesmoke;
     text-align: center;
 }
 
 .tabela1{
-    background-color: rgb(195, 247, 247);
+    background-color: white;
     text-align: center;
 }
 
 .tabela2{
-    background-color: rgb(195, 247, 247);
+    background-color: white;
     text-align: center;
 }
 
+.container-flex{
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 thead,th,tr{
-    color: whitesmoke;
+    color: black;
 }
 
 *{
-    
-    background-color: rgb(67, 160, 221);
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(10, 143, 143);
 }
 
 
