@@ -13,9 +13,9 @@ https://coolors.co/*/
 }
 
 body{
+    background-image:url("../img/galaxy.jpg");
     margin: 0;
     font-family: 'Lato', Arial, sans-serif;
-    background-image: url(/img/galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
