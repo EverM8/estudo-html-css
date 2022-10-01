@@ -7,8 +7,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ponto turístico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/exercicio-pontoturistico.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 </head>
 <body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <span class="navbar-burguer" onclick="ativaNavBar()">
+                    &#8801;
+                </span> 
+            </div>
+            <div class="navbar-menu" class="ativa">
+
+              <!-- ACORDION <div class="accordion" id="accordionExample">
+            
+                    <div class="accordion-item mt-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Visita virtual
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <a href="https://www.google.com/maps/uv?pb=!1s0x7160f8afc4458ad%3A0x2e95c09c7580186c!3m1!7e115!4s%2Fmaps%2Fplace%2FBas%25C3%25ADlica%2Bdo%2BSenhor%2Bdo%2BBonfim%2F%40-12.9238807%2C-38.5084992%2C3a%2C75y%2C69.27h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sCksjgT9LwGxvqigAQoH60A*212e0*214m2*213m1*211s0x7160f8afc4458ad%3A0x2e95c09c7580186c%3Fsa%3DX!5sBas%C3%ADlica%20do%20Senhor%20do%20Bonfim%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e2!2sCksjgT9LwGxvqigAQoH60A&hl=pt-BR&sa=X&ved=2ahUKEwi95Oui2b_6AhVKCbkGHaSzC2sQpx96BQiQARAI" target="_blank">Tour virtual</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mt-3">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Saiba mais
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <a href="https://www.salvadordabahia.com/experiencias/igreja-nosso-senhor-do-bonfim/" class="saibaMais" target="_blank">Saiba mais sobre a Igreja Nosso Senhor do Bomfim.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+
+                  <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link"  type="button" data-target="#collapse1" data-toggle="collapse">
+                                <h3 class="h3" >Tour virtual</h3>
+                            </button>
+                        </div>
+                        <div class="collapse  " id="collapse1" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href="https://www.google.com/maps/uv?pb=!1s0x7160f8afc4458ad%3A0x2e95c09c7580186c!3m1!7e115!4s%2Fmaps%2Fplace%2FBas%25C3%25ADlica%2Bdo%2BSenhor%2Bdo%2BBonfim%2F%40-12.9238807%2C-38.5084992%2C3a%2C75y%2C69.27h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sCksjgT9LwGxvqigAQoH60A*212e0*214m2*213m1*211s0x7160f8afc4458ad%3A0x2e95c09c7580186c%3Fsa%3DX!5sBas%C3%ADlica%20do%20Senhor%20do%20Bonfim%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e2!2sCksjgT9LwGxvqigAQoH60A&hl=pt-BR&sa=X&ved=2ahUKEwi95Oui2b_6AhVKCbkGHaSzC2sQpx96BQiQARAI" target="_blank">Link para o tour virtual</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link" type="button" data-target="#collapse2" data-toggle="collapse">
+                               <h3 class="h3">Saiba Mais</h3> 
+                            </button>
+                        </div>
+                        <div class="collapse" id="collapse2" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href="https://www.salvadordabahia.com/experiencias/igreja-nosso-senhor-do-bonfim/" class="saibaMais" target="_blank">Mais informações sobre a Igreja Nosso Senhor do Bomfim.</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+
+            </div>
+        
+        </nav>
+    </header>
+
+
+<div class="div">
+
     <h1>Basílica do Senhor do Bonfim</h1>
     <p>A Igreja Nosso Senhor do Bonfim é um templo católico localizado na Sagrada Colina, na península de Itapagipe, em Salvador, Brasil. Sua construção teve início entre 1745 e 1746, finalizando suas obras internas em 1754 e externa em 1772 (com as torres). É lá que são distribuídas as famosas fitinhas do Bonfim, que são feitas desde o início do século XIX com a medida do comprimento do braço direito até o peito da imagem do Senhor do Bonfim. É tombado desde 1985 e seu tombamento inclui também todo o seu acervo.
 <br>
@@ -16,34 +102,53 @@
 <br>
         As imagens de Senhor do Bonfim e de Nossa Senhora da Guia vieram de Portugal para a Bahia, através do capitão da marinha portuguesa Theodozio Rodrigues de Faria, chegando no dia 18 de abril de 1745, num domingo de Páscoa e ficando abrigadas na Igreja da Penha, edificada na ponta da península itapagipana, até 1754.</p>
         <br>
-        <a href="https://www.santuariosenhordobonfim.com/" target="_blank">Site da Basílica do Senhor do Bonfim.</a>
+        
         <br>
-        <div>
-            <ol type="I">
-                <li><a href="#externa">Foto externa da Basílica.</a></li>
-                <li><a href="#fitas">Foto das Fita do Senhor do Bonfim.</a></li>
-                <li><a href="#entrada">Foto da entrada.</a></li>
-                <li><a href="#interna">Foto interna.</a></li>
-                <li><a href="#altar">Foto do altar.</a></li>
-            </ol>
+        <h3 class=".h3">Galeria</h3>
+<section class="galeria">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Igreja do Bonfim fora.jpg"  height="900" width="900"  id="externa" class="d-block w-1   00" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Igreja do Bonfim fitas.jpg" height="600" width="800" id="fitas" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Igreja do Bonfim entrada.jpg" height="600" width="800" id="entrada" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Igreja do Bonfim dentro.jpg" height="600" width="800" id="interna" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Igreja do Bonfim altar.jpg" height="600" width="800" id="altar" class="d-block w-100" alt="...">
+          </div>
+          
         </div>
-        <div>
-            <img src="./img/Igreja do Bonfim fora.jpg" alt="Imagem externa da igreja."
-            id="externa" width="800" />
-        </div>
-        <div>
-            <img src="./img/Igreja do Bonfim fitas.jpg" alt="Imagem das fitinhas."
-            id="fitas" width="800" />
-        </div>
-        <div>
-            <img src="./img/Igreja do Bonfim entrada.jpg" alt="Imagem da entrada da igreja." id="entrada" width="800" />
-        </div>
-        <div>
-            <img src="./img/Igreja do Bonfim dentro.jpg" alt="Imagem interna da igreja." id="interna" width="800" />
-        </div>
-        <div>
-            <img src="./img/Igreja do Bonfim altar.jpg" alt="Imagem do altar."
-            id="altar" width="800" />
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+       
+</section>
+</div>
+
+        <script>
+            function ativaNavBar(){
+                document.querySelector(".navbar-menu").classList.toggle("ativa")
+            }
+        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

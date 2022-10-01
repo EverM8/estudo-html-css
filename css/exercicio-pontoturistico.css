@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    
+    margin: 0;
+}
+
+.h3{
+    color: black;
+}
+
+.btn btn-link{
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    opacity: 0.67;
+}
+
+.navbar-brand, h2{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar{
+    min-height: 30px;
+    background-color: rgb(222, 230, 236);
+    display: flex;
+    padding: 10px;
+   /* justify-content: center;*/
+    
+}
+
+
+.navbar-burguer{
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    display: inline; 
+}
+
+.navbar-menu{
+    width: 50%;
+    display: none;
+}
+
+.navbar, .navbar-menu{
+    flex-direction: column;
+}
+
+.navbar-brand{
+    width: auto;
+    display: flex;
+}
+
+.navbar-link{
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.ativa{
+    display: flex;
+}
+
+.div{
+    padding: 0 10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    /*background-image: url("https://wallpapercave.com/wp/wp1860167.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
+}
+
+.saibaMais{
+    text-decoration: none;
+}
+.saibaMais:hover{
+    opacity: 0.67;
+}
